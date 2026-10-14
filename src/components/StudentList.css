@@ -1,0 +1,42 @@
+/* StudentList.css */
+
+.section.projects {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f8fafc;
+}
+
+.section.projects .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Student Cards Grid */
+.student-skill {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px) {
+    .student-skill {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .section.projects {
+        padding: 35px 15px;
+    }
+
+    .student-skill {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
